@@ -1,26 +1,29 @@
 {% load static %}
+
 <html>
     <head>
-        <title>Nina's blog</title>
+        <meta charset="utf-8">
+        <title>Nina Veselova</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//bootstrap-3.ru/examples/jumbotron/jumbotron.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
     </head>
-    <body>
-        <div class = "page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><i style="font-size:40px; color:pink ;" span class="glyphicon glyphicon-plus"></i>></span></a>
-            <h1><a href="/">My first blog</a> </h1>
-        </div>
-            {% endif %}
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                   {% block content %}
-                   {% endblock %}
-                </div>
+  <body>
+
+     <div class="jumbotron">
+      <div class="container">
+        <h2>Git guide</h2>
+        <p>Hello, my name is Nina and this is small guide to my projects.</p>
+      </div>
+    </div>
+     <div class="content container"
+         <div class="row">
+                    {% block content %}
+                    {% endblock %}
             </div>
-        </div>
-    </body>
+     </div>
+  </body>
 </html>

@@ -1,7 +1,18 @@
 
+body {
+    padding-top: 0px;
+}
+
+.jumbotron{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #5cb85c;
+    background-color: #dff0d8;
+}
+
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #FADADD;
-    font-size: 36pt;
+    color: #FADAFD;
+    font-size: 24pt;
     text-decoration: none;
 }
 
@@ -9,9 +20,6 @@
     margin-left: 40px;
 }
 
-.top_menu {
-    color: #FADADD;
-}
 
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
@@ -29,17 +37,3 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #00FFF1;
-}
