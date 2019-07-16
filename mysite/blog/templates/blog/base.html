@@ -9,21 +9,20 @@
         <link rel="stylesheet" href="//bootstrap-3.ru/examples/jumbotron/jumbotron.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
     </head>
-  <body>
 
-     <div class="jumbotron">
-      <div class="container">
-        <h2>Git guide</h2>
-        <p>Hello, my name is Nina and this is small guide to my projects.</p>
-      </div>
-    </div>
-     <div class="content container"
-         <div class="row">
-                    {% block content %}
-                    {% endblock %}
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h2><a href="/">Git guide</a></h2>
+                <p><img src="{% static 'css/photo.jpg' %}" class="img-circle"> Hello, my name is Nina and this is small guide to my projects.</p>
             </div>
-     </div>
-  </body>
+        </div>
+        <div class="content container">
+            <div class="row">
+                {% block content %}
+                {% endblock %}
+            </div>
+         </div>
+    </body>
 </html>

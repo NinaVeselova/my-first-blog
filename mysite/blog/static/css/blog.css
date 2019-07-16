@@ -1,19 +1,28 @@
 
 body {
     padding-top: 0px;
+    background-color: #f5eff5;
 }
 
-.jumbotron{
+.jumbotron {
     padding-top: 18px;
     padding-bottom: 18px;
-    color: #5cb85c;
-    background-color: #dff0d8;
+    color: #646b63;
+    background-color: #ede1ed;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #FADAFD;
-    font-size: 24pt;
-    text-decoration: none;
+.jumbotron a {
+    color: #854e85
+}
+
+.img-circle {
+    width: 120px;
+    height: auto;
+}
+
+.gradient-one{
+    background-image: linear-gradient(to right, #bc8ebc, #854e85);
+    background-repeat: repeat
 }
 
 .content {
@@ -21,12 +30,9 @@ body {
 }
 
 
-h1, h2, h3, h4 {
+h2, h3 a {
     font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
+    color: #50564f
 }
 
 .save {
@@ -37,3 +43,11 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
+.glyphicon-plus {
+    float: right;
+}
+
+.date {
+    color: cccccc;
+    font-size: 12px;
+}
